@@ -15,6 +15,43 @@ for fruit in fruits:
 subjects = ["Math", "Science", "History", "Art"]
 for subject in subjects:
     print(subject)
+
+# Print out each subject but stop when you reach history
+for subject in subjects:
+    if subject =="History":
+        break
+    print(subject)
+
+# Skip over science bt print the rest
+for subject in subjects:
+    if subject == "Science":
+        continue
+    print(subject)
+
+list1000= list(range(1,1001))
+
+for number in list1000:
+    if number>599:
+        break
+    print(number)
+
+
+# Skip over range 300-500
+
+for number in list1000:
+    if number>299 and number<501:
+         continue 
+    print(number)
+
+
+
+
+
+
+
+
+
+
 # Challenge:
 # Use a for loop and range to print each subject along with its index:
 # Example output: "Subject 0: Math"
