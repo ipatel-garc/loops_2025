@@ -53,17 +53,33 @@ for applicants, score in zip(applicants_for_credits, credit_scores):
     print(applicants + " approved for credit with score: " + str(score))
 
 
-
-
-
-
 # Challenge:
 # Use a for loop and range to print each subject along with its index:
 # Example output: "Subject 0: Math"
-
+print(len(subjects))
+for index in range(len(subjects)-1):
+    print("Subject " + str(index)+ ": " + subjects[index])
 
 # Given:
 numbers = [5, 10, 15, 20]
+
+total = 0
+for number in numbers:
+    total+= number
+print("total: ", total)
+
+
+
+new_numbers= list(range(1,260001))
+
+total=0
+for number in new_numbers:
+    total += number
+print("Sum:", total)
+
+
+
+
 
 # Challenge:
 # Use a for loop to add all the numbers and print the total.
